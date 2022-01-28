@@ -5,8 +5,7 @@ pipeline {
 	  stage('Building'){
 		  steps{
 	    
-		   dir('build'){
-     bat "cmake -S ../ -B ."
+	cmakeBuild buildDir: 'build', cleanBuild: true, generator: 'mingw32-make', installation: 'InSearchPath', steps: [[withCmake: true]]
 		   }  }}
   }
 }
