@@ -6,6 +6,6 @@ pipeline {
 		  steps{
 	    
 	cmakeBuild buildDir: 'build', cleanBuild: true, generator: 'mingw32-make', installation: 'InSearchPath', steps: [[withCmake: true]]
-		   }  }}
+		   }  }
   }
 }
