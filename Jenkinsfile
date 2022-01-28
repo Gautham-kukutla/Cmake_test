@@ -5,7 +5,7 @@ pipeline {
     stage('Building'){
 	    steps{
 	    dir('build'){
-      bat "cmake ../ && cmake --build ."
+      bat "cmake -S ../ && cmake --B . -G 'MinGW Makefiles'"
 	    }}}
   }
 }
