@@ -2,8 +2,9 @@ pipeline {
 	agent any
 
   stages {
-    stage('Build'){
+    stage('Building'){
+	    dir('build'){
       bat "cmake .../ && cmake --build ."
-    }
+	    }}
   }
 }
