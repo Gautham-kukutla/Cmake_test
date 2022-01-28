@@ -4,8 +4,7 @@ pipeline {
   stages {
     stage('Building'){
 	    steps{
-	    dir('build'){
-      bat "cmake -S ../ && cmake --B . -G 'MinGW Makefiles'"
+      cmake -S ../ -B . -G "MinGW Makefiles", installation: 'InSearchPath'
 	    }}}
   }
 }
