@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Building'){
 	    steps{
-      cmake -S ../ -B . -G "MinGW Makefiles"
+      cmake -S ../ -B .
 	    }}
   }
 }
