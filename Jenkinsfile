@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Building'){
 	    steps{
-      cmake -S ../ -B .
+     bat "cmake -S ../ -B ."
 	    }}
   }
 }
