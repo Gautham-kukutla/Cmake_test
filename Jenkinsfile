@@ -3,9 +3,9 @@ pipeline {
 
   stages {
     stage('Building'){
-	    steps{
-		    script{
+	    
+		   dir('build'){
      bat "cmake -S ../ -B ."
-		    }}}
+		    }}
   }
 }
