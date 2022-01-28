@@ -5,6 +5,6 @@ pipeline {
     stage('Building'){
 	    steps{
       cmake -S ../ -B . -G "MinGW Makefiles", installation: 'InSearchPath'
-	    }}}
+	    }}
   }
 }
