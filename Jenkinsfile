@@ -5,7 +5,8 @@ pipeline {
     stage('Building'){
 	    steps{
 	    dir('build'){
-      bat "cmake .../ && cmake --build ."
+      bat "cmake .../ "
+      bat "cmake --build ."
 	    }}}
   }
 }
