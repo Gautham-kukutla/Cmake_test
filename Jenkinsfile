@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 
-  stagegs {
+  stages {
     stage('Build'){
       bat "cmake .../ && cmake --build ."
     }
